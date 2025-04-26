@@ -4,6 +4,7 @@
 //4. boolean = true/false
 //5. null = standalone value(empty value)
 let state = null;
+//Null typeof is an object
 //6. undefined = no value defined, value not assigned
 //7. Symbol = unique value
 //8. Object = collection of key value pairs 
