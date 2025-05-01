@@ -29,9 +29,46 @@ const slicedArray = arr4.slice(2,5);// //Returns a shallow copy of a portion of 
 // console.log(slicedArray); // [30, 40, 50]
 
 const splicedArray = arr4.splice(2,5);
-console.log(arr4);
-console.log(splicedArray); // [30, 40, 50, 60, 70]
+// console.log(arr4);
+// console.log(splicedArray); // [30, 40, 50, 60, 70]
 //The splice() method changes the contents of an array by removing or replacing 
 // existing elements and/or adding new elements in place.
 //The splice() method returns an array containing the deleted elements.
 //The original array will be modified.
+
+//Concat and Join Operations
+const fruits = ['Apple','Banana','Mango'];
+const vegetables = ['Potato','Tomato','Onion'];
+const fruits1 = fruits.join(','); //Joins all elements of an array into a string
+// console.log(fruits1); // 'Apple,Banana,Mango;
+
+// fruits.push(vegetables);
+// console.log(fruits); // ['Apple', 'Banana', 'Mango', ['Potato', 'Tomato', 'Onion']]
+// console.log(fruits[3][2]);// 'Onion'
+// const food = fruits.concat(vegetables);
+// console.log(food); // ['Apple', 'Banana', 'Mango', 'Potato', 'Tomato', 'Onion']
+
+const food = [...fruits,...vegetables];//Spread operator
+console.log(food); // ['Apple', 'Banana', 'Mango', 'Potato', 'Tomato', 'Onion']
+
+let score1 = 100;
+let score2 = 200;
+let score3 = 400;
+ console.log(Array.of(score1,score2,score3)); // [100, 200, 400]
+//Array.of() method creates a new Array instance from a variable number of arguments,
+//regardless of number or type of the arguments.
+//Array.of() method is similar to Array() constructor, but it does not create an array
+// with a single element (like Array(3) creates an array with 3 empty slots).
+
+//Array.isArray() method returns true if the argument is an array,
+//and false otherwise.
+console.log(Array.isArray(fruits)); // true
+console.log(Array.isArray(vegetables)); // true
+console.log(Array.isArray(10)); // false
+
+
+//Array.from() method creates a new, shallow-copied Array instance from an 
+// array-like or iterable object.
+const str = 'Hello';
+const strArray = Array.from(str); // ['H', 'e', 'l', 'l', 'o']
+console.log(strArray); // ['H', 'e', 'l', 'l', 'o']
