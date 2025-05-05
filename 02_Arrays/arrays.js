@@ -72,3 +72,4 @@ console.log(Array.isArray(10)); // false
 const str = 'Hello';
 const strArray = Array.from(str); // ['H', 'e', 'l', 'l', 'o']
 console.log(strArray); // ['H', 'e', 'l', 'l', 'o']
+console.log(str);
