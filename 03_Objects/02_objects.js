@@ -10,7 +10,7 @@ const user = {
 }
 // console.log(user.name);
 // console.log(user.name.fullname);
-console.log(user.name.fullname.firstName); // John
+// console.log(user.name.fullname.firstName); // John
 
 const obj1 = {1: "one", 2: "two"}
 const obj2 = {3: "three", 4: "four"}
@@ -59,3 +59,15 @@ const user1 =[
 //Object.entries() method returns an array of a given object's own enumerable 
 // string-keyed property [key, value] pairs.
 // console.log(Object.entries(user));
+
+const course = {
+    courseName : "JavaScript for beginners",
+    price : 999,
+    courseDuration : "3 months"
+}
+
+const {courseDuration:duration} = course;
+// console.log(courseDuration); // 3 months
+console.log(duration); // 3 months
+//Destructuring assignment syntax is a JavaScript expression that makes it
+// possible to unpack values from arrays, or properties from objects, into distinct variables.
