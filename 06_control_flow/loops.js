@@ -48,6 +48,8 @@ for (const key in map) {
 }
 
 //for..each loop
+//They don't return anything, just iterate over the array.
+// They are not part of the ES6 standard, but are widely used in JavaScript.
 const coding = ['JavaScript', 'Python', 'Java', 'C++'];
 // coding.forEach((lang) => {
 //     console.log(lang);
